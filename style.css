@@ -1,0 +1,109 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+:root {
+  --green: hsl(75, 94%, 57%);
+  --white: hsl(0, 0%, 100%);
+  --grey-700: hsl(0, 0%, 20%);
+  --grey-800: hsl(0, 0%, 12%);
+  --grey-900: hsl(0, 0%, 8%);
+  --main-font: "Inter", sans-serif;
+  --font-weight-normal: 400;
+  --font-weight-medium: 600;
+  --font-weight-bold: 700;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--main-font);
+  font-size: 0.875rem;
+  background-color: var(--grey-900);
+  color: var(--white);
+}
+
+main {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  border-radius: 10px;
+  background-color: var(--grey-800);
+  height: 600px;
+  text-align: center;
+}
+
+.profile {
+  width: 96px;
+  height: 96px;
+  background-image: url(./images/avatar-jessica.jpeg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 50%;
+  margin: 32px auto;
+}
+
+.name {
+  font-weight: var(--font-weight-bold);
+  font-size: 1.5rem;
+  margin-bottom: 6px;
+}
+
+.country {
+  color: var(--green);
+  font-weight: var(--font-weight-medium);
+  margin-bottom: 24px;
+}
+
+.quote {
+  font-weight: var(--font-weight-normal);
+}
+
+ol {
+  margin: 24px 30px 0px;
+}
+
+li {
+  width: 300px;
+  padding: 14px 0px;
+  border-radius: 6px;
+  margin: 0px auto 16px;
+  list-style: none;
+  background-color: var(--grey-700);
+  font-weight: var(--font-weight-bold);
+}
+
+li:hover {
+  background-color: var(--green);
+  color: black;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media screen and (max-width: 375px) {
+  /* html { 
+    font-size: 12px; Optional
+  } */
+
+  ol {
+    margin: 24px 25px 0px;
+  }
+
+  li {
+    width: 270px;
+  }
+}
